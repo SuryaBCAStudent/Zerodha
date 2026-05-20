@@ -13,16 +13,18 @@ const PositionModel = require("./model/PositionsSchema");
 const OrderModel = require("./model/OrderSchema");
 
 const app = express();
- const PORT = process.env.PORT || 5000;;
+const PORT = process.env.PORT || 5000;
 const MONGO_URL = process.env.MONGO_URL;
 
 
 app.use(cors({
-  origin: "https://zerodha-1-u87h.onrender.com",
+  origin: [
+    "https://zerodha-1-u87h.onrender.com", // 
+    "https://zerodha-dashboard-uqfy.onrender.com" // 
+  ],
   credentials: true
 }));
 
-app.use(express.json());
 app.use(express.json());
 app.use(cookieParser());
 
