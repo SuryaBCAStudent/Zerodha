@@ -18,7 +18,7 @@ const MONGO_URL = process.env.MONGO_URL;
 
 
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: "https://zerodha-1-u87h.onrender.com",
   credentials: true
 }));
 
