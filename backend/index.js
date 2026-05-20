@@ -16,7 +16,7 @@ const app = express();
  const PORT = process.env.PORT || 5000;;
 const MONGO_URL = process.env.MONGO_URL;
 
-// ✅ CORS (IMPORTANT)
+
 app.use(cors({
   origin: "http://localhost:3000",
   credentials: true
