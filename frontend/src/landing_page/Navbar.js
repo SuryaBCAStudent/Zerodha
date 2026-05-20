@@ -21,7 +21,7 @@ function Navbar() {
   // Logout handle karne ke liye function
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:3002/logout", {}, { withCredentials: true });
+      await axios.post("https://zerodha-uc23.onrender.com/logout", {}, { withCredentials: true });
       
       // LocalStorage se token hatao aur state update karo
       localStorage.removeItem("token");

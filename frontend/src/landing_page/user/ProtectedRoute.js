@@ -10,7 +10,7 @@ const ProtectedRoute = ({ children }) => {
   useEffect(() => {
 
     axios.get(
-      "http://localhost:3002/verify",
+      "https://zerodha-uc23.onrender.com/verify",
       { withCredentials: true }
     )
     .then((res) => {
